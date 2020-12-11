@@ -16,14 +16,14 @@ exports.getCategoryById = (eq, res, next, id) => {
 exports.createCategory = (req, res) => {
     const category = new Category(req.body);
     category.save((err, category) => {
-            if (err) {
-                return res.staus(400).json({
-                    error: "NOT able to save category in DB"
-                });
-            }
-            res.json({ category });
+      if (err) {
+        return res.status(400).json({
+          error: "NOT able to save category in DB"
         });
-};
+      }
+      res.json({ category });
+    });
+  };
 
 exports.getCategory = (req, res) => {
     return res.json(req.category);
@@ -65,7 +65,7 @@ exports.removeCategory = (req, res) =>{
             });
         }
         res.json({
-            message: `${category} category Deleted successfully.`
+            message: "category Deleted successfully."
         });
     });
 }
