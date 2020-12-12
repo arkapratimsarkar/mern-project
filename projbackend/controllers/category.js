@@ -2,7 +2,7 @@ const Category = require('../models/category');
 
 exports.getCategoryById = (eq, res, next, id) => {
 
-    i.ZF-B56MdcK-BM.findById(id).exec((err, cate) =>{
+    category.findById(id).exec((err, cate) =>{
         if(err){
             return res.staus(400).json({
                 error: "Category not found in DB"
