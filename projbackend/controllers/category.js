@@ -41,6 +41,7 @@ exports.getAllCategory = (req, res) => {
 
 exports.updateCategory = (req, res) => {
   const category = req.category;
+  //name is being set by frontend request
   category.name = req.body.name;
 
   category.save((err, updatedCategory) => {
