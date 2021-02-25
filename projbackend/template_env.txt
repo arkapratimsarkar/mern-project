@@ -1,0 +1,2 @@
+DATABASE=mongodb_db_url
+SECRET=any_secret_text
