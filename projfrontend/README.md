@@ -1,3 +1,3 @@
 # mern-project frontend
 
-this is where the backend files will go.
+this is where the frontend files will go.
